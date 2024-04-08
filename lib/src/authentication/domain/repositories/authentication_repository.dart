@@ -11,3 +11,4 @@ abstract class AuthenticationRepository {
 
   ResultFuture<List<User>> getUsers();
 }
+
