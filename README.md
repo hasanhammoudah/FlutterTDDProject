@@ -25,7 +25,8 @@ Our project repository is organized following Clean Architecture principles, wit
 
 ### Screenshots
 
-| Screenshot 1                      | Screenshot 2                      |
-| --------------------------------- | --------------------------------- |
-| ![Screenshot 1](assets\images\dd.png) | ![Screenshot 2](assets\images\image2.png) |
+| Screenshot 1                         | Screenshot 2                               |
+| ------------------------------------ | ------------------------------------------ |
+| ![Screenshot 1](assets/images/dd.png) | ![Screenshot 2](assets/images/image2.png) |
+
 
