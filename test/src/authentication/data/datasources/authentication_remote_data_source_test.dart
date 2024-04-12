@@ -82,7 +82,7 @@ void main() {
           (_) async => http.Response(jsonEncode([tUsers.first.toMap()]), 200));
       final result = await remoteDataSource.getUsers();
       expect(result, equals(tUsers));
-      verify(() => client.get(Uri.https(kBaseUrl, kGetUserEndpoint))).called(1);
+      verify(() => client.get(Uri.https(kBaseUrl, kGetUsersEndpoint))).called(1);
       verifyNoMoreInteractions(client);
     });
     test('should return [APIException] when the status code is not 200',
@@ -98,7 +98,7 @@ void main() {
           const APIException(message: tMessage, statusCode: 500),
         ),
       );
-        verify(() => client.get(Uri.https(kBaseUrl, kGetUserEndpoint))).called(1);
+        verify(() => client.get(Uri.https(kBaseUrl, kGetUsersEndpoint))).called(1);
       verifyNoMoreInteractions(client);
     });
   });

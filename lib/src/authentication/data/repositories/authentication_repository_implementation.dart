@@ -9,13 +9,21 @@ import 'package:tdd/src/authentication/domain/repositories/authentication_reposi
 class AuthenticationRepositoryImplementation
     implements AuthenticationRepository {
   const AuthenticationRepositoryImplementation(this._remoteDataSource);
+
   final AuthenticationRemoteDataSource _remoteDataSource;
 
   @override
-  ResultVoid createUser(
-      {required String createdAt,
-      required String name,
-      required String avatar}) async {
+  ResultVoid createUser({
+    required String createdAt,
+    required String name,
+    required String avatar,
+  }) async {
+    // Test-Driven Development
+    // call the remote data source
+    // check if the method returns the proper data
+    // make sure that it returns the proper data if there is no exception
+    // // check if when the remoteDataSource throws an exception, we return a
+    // failure
     try {
       await _remoteDataSource.createUser(
           createdAt: createdAt, name: name, avatar: avatar);
