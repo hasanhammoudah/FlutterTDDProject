@@ -1,10 +1,8 @@
 import 'dart:convert';
-import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:tdd/core/utils/typedef.dart';
 import 'package:tdd/src/authentication/data/models/user_model.dart';
 import 'package:tdd/src/authentication/domain/entities/user.dart';
-
 import '../../../../fixtures/fixture_reader.dart';
 
 void main() {
